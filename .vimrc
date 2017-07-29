@@ -1,9 +1,11 @@
 syntax on
 set autoindent
-set smartindent
+"set smartindent
 set nocp
 filetype plugin on
-au BufRead,BufNewFile *.rc set filetype=rc
+au BufRead,BufNewFile *.rs set filetype=rust
+au BufRead,BufNewFile *.cr set filetype=ruby
+au BufRead,BufNewFile *.slim set filetype=slim
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -32,7 +34,7 @@ set hlsearch
 "ron
 "murphy
 "darkblue
-colorscheme desert
+colorscheme delek
 " configure tags - add additional tags here or comment out not-used ones
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/qt4
@@ -67,7 +69,7 @@ if has("gui_running")
   " Maximize gvim window.
   set lines=70 columns=100
 endif
-let g:clang_complete_auto = 1
+let g:clang_complete_auto = 0
 let g:clang_complete_copen = 1
 let g:clang_hl_errors = 1
 "let g:clang_periodic_quickfix = 1

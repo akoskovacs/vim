@@ -1,0 +1,16 @@
+[user]
+	email = akoskovacs@gmx.com
+	name = Ákos Kovács
+
+[color]
+    ui = yes
+
+[http]
+	postBuffer = 2M
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    lg = log --graph
